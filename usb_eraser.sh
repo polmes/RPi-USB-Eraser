@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USB_UUID = "06D4-6015"
-USB_LABEL = "MESALLIS"
+USB_UUID="06D4-6015"
+USB_LABEL="MESALLIS"
 
 # Main
 function start_eraser {
@@ -10,8 +10,8 @@ function start_eraser {
 }
 
 # Identify USB partition
-RETURN_UUID = $(readlink -f /dev/disk/by-uuid/$USB_UUID)
-RETURN_LABEL = $(readlink -f /dev/disk/by-label/$USB_LABEL)
+RETURN_UUID=$(readlink -f /dev/disk/by-uuid/$USB_UUID)
+RETURN_LABEL=$(readlink -f /dev/disk/by-label/$USB_LABEL)
 if [ $RETURN_UUID = $RETURN_LABEL ]; then
 	echo "$(date) - USB_UUID and USB_LABEL match. Formatting in 10..." >> usb_eraser.log
 	start_eraser
