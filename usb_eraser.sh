@@ -6,8 +6,8 @@ USB_VENDOR="0781"
 USB_PRODUCT="5567"
 
 # Requirements
-	# usb_eraser.rules in /etc/udev/rules.d/ with the following content:
-	# ACTION=="add", ATTRS{idVendor}=="0781", ATTRS{idProduct}=="5567", RUN+="/home/pi/git/RPi_USB_Eraser/usb_eraser.sh"
+	# 10-usb-eraser.rules in /etc/udev/rules.d/ with the following content:
+	# KERNEL=="sd*1", SUBSYSTEMS=="usb", SUBSYSTEM=="block", ACTION=="add", ATTRS{idVendor}=="0781", ATTRS{idProduct}=="5567", RUN+="/home/pi/git/RPi_USB_Eraser/usb_eraser.sh"
 
 # Main
 echo "[$(date)] Formatting in 10..." >> /home/pi/git/RPi_USB_Eraser/usb_eraser.log
