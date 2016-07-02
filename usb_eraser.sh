@@ -2,8 +2,10 @@
 
 # Known USB device info
 USB_LABEL="MESALLIS"
-USB_VENDOR="0781"
-USB_PRODUCT="5567"
+SANDISK_VENDOR="0781"
+SANDISK_PRODUCT="5567"
+INTENSO_VENDOR="8644"
+INTENSO_PRODUCT="8005"
 
 # Requirements: 10-usb-eraser.rules in /etc/udev/rules.d/ with the contents of 10-usb-eraser.rules.sample
 
