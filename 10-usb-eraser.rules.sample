@@ -1,0 +1,2 @@
+KERNEL=="sd*1", SUBSYSTEMS=="usb", SUBSYSTEM=="block", ACTION=="add", ATTRS{idVendor}=="0781", ATTRS{idProduct}=="5567", RUN+="/home/pi/git/RPi_USB_Eraser/usb_eraser.sh" # SANDISK
+KERNEL=="sd*1", SUBSYSTEMS=="usb", SUBSYSTEM=="block", ACTION=="add", ATTRS{idVendor}=="8644", ATTRS{idProduct}=="8005", RUN+="/home/pi/git/RPi_USB_Eraser/usb_eraser.sh" # INTENSO
